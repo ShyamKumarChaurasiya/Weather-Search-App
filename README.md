@@ -103,26 +103,39 @@ http://localhost:5173
 ## 📂 Project Structure
 
 ```text
-Weather-Search-App/
+Weather-Search/
 │
 ├── public/
-│   └── favicon.svg
 │
 ├── src/
-│   ├── Components/
-│   │   └── Weather.jsx       # Weather component
+│   ├── assets/
+│   │   ├── cold.jpg
+│   │   ├── hot.avif
+│   │   └── rain.jpg
 │   │
-│   ├── App.jsx               # Main application component
-│   ├── main.jsx              # React entry point
-│   └── ...                   # Other source files
+│   ├── Components/
+│   │   ├── ErrorMessage.jsx
+│   │   ├── SearchBox.jsx
+│   │   ├── Weather.jsx
+│   │   └── WeatherCard.jsx
+│   │
+│   ├── Services/
+│   │   └── weatherApi.js
+│   │
+│   ├── App.css
+│   ├── App.jsx
+│   ├── index.css
+│   ├── main.jsx
+│   └── Weather.css
 │
 ├── .env                      # Local API key (not uploaded)
 ├── .gitignore                # Excludes node_modules and .env
 ├── index.html                # Main HTML document
 ├── package.json              # Dependencies and scripts
 ├── package-lock.json         # Dependency lock file
-├── vite.config.js            # Vite configuration
-└── README.md                 # Project documentation
+├── README.md                 # Project documentation
+├── vite.config.js             # Vite configuration
+└── .oxlintrc.json             # Oxlint configuration
 ```
 
 ## 💡 How to Use
@@ -146,6 +159,7 @@ This project helped me practice:
 - Handling API responses and errors
 - Using environment variables in Vite
 - Understanding geocoding and latitude-longitude coordinates
+- Organizing components and API services
 - Creating responsive web interfaces
 - Managing projects using Git and GitHub
 
