@@ -1,0 +1,47 @@
+.Search {
+    min-height: 100vh;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    padding: 40px;
+}
+
+/* Left side */
+.search-section {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+
+/* Heading */
+.search-section h1 {
+    margin-bottom: 30px;
+}
+
+/* Search form */
+.search-form {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 20px;
+}
+
+/* Error message */
+.error {
+    color: red;
+    margin-top: 20px;
+}
+
+/* Right side */
+.weather-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
